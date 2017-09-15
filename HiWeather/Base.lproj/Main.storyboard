@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arista.ttf">
+            <string>Arista2.0Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WeatherVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherVC" customModule="HiWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="WeatherView" customModule="HiWeather" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cairo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYi-gX-Qnn">
+                                <rect key="frame" x="16" y="48" width="288" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qrv-DC-G0c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arista2.0Light" family="Arista 2.0 Light" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="AnJ-Xj-Krh">
+                                <rect key="frame" x="84" y="116" width="152" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="aP7-4H-Ipi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, Sunny" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53y-oE-SIn">
+                                <rect key="frame" x="16" y="292" width="288" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Uru-Jx-fn7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arista2.0Light" family="Arista 2.0 Light" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0n-Pz-JoH">
+                                <rect key="frame" x="163" y="264" width="109" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Arista2.0Light" family="Arista 2.0 Light" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2383898944" green="0.5890110731" blue="0.85887372490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="53y-oE-SIn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2mg-Q9-2QV"/>
+                            <constraint firstItem="AnJ-Xj-Krh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="53q-rv-us8"/>
+                            <constraint firstItem="AnJ-Xj-Krh" firstAttribute="top" secondItem="qYi-gX-Qnn" secondAttribute="bottom" constant="8" id="AWJ-Az-9Vu"/>
+                            <constraint firstItem="Q0n-Pz-JoH" firstAttribute="top" secondItem="qYi-gX-Qnn" secondAttribute="bottom" constant="156" id="EB6-9j-XF0"/>
+                            <constraint firstItem="qYi-gX-Qnn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JMs-mI-gw0"/>
+                            <constraint firstItem="Q0n-Pz-JoH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="147" id="LBE-kM-Egz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q0n-Pz-JoH" secondAttribute="trailing" constant="32" id="gEl-83-Egf"/>
+                            <constraint firstItem="53y-oE-SIn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hLe-ls-bbL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AnJ-Xj-Krh" secondAttribute="trailing" constant="68" id="ofC-x4-Ofy"/>
+                            <constraint firstItem="53y-oE-SIn" firstAttribute="top" secondItem="AnJ-Xj-Krh" secondAttribute="bottom" constant="24" id="orS-7c-O8Z"/>
+                            <constraint firstItem="qYi-gX-Qnn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tMp-T9-aSB"/>
+                            <constraint firstItem="qYi-gX-Qnn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="wuP-fT-scR"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="cityLabel" destination="qYi-gX-Qnn" id="Ju9-cz-Vk7"/>
+                            <outlet property="tempLabel" destination="Q0n-Pz-JoH" id="ic8-0i-2Kc"/>
+                            <outlet property="weatherStatusImage" destination="AnJ-Xj-Krh" id="6tb-9n-30A"/>
+                            <outlet property="weatherStatusLabel" destination="53y-oE-SIn" id="nIl-mB-8Ir"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="weatherView" destination="8bC-Xf-vdC" id="eWP-gk-Jew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.125" y="135.21126760563379"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clouds" width="204" height="150"/>
+    </resources>
+</document>
